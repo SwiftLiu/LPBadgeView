@@ -1,6 +1,6 @@
 # LPBadgeView
 仿QQ新消息数的小红圈徽标Badge，橡皮筋效果
-https://github.com/SwiftLiu/LPBadgeView.git
+下载地址：https://github.com/SwiftLiu/LPBadgeView.git
 
 #### 1.便利初始化
 
