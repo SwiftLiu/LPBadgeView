@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入值" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paX-Gf-M3b">
+                                <rect key="frame" x="129" y="175" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zU-PF-Znv">
+                                <rect key="frame" x="103" y="39" width="114" height="119"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-gY-3Fh" customClass="LPBadgeView">
+                                        <rect key="frame" x="38" y="18" width="39" height="31"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="阻挡层" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tec-tS-nFx">
+                                        <rect key="frame" x="26" y="68" width="63" height="35"/>
+                                        <color key="backgroundColor" red="0.15672318897342841" green="0.8787639121989842" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.97565462009486703" green="1" blue="0.97019623162094704" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="ZUF-MB-EIi"/>
+                                    <constraint firstAttribute="height" constant="119" id="kwg-Ej-sdU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-rf-2DK">
+                                <rect key="frame" x="138" y="223" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9HT-PI-QLs"/>
+                                    <constraint firstAttribute="width" constant="45" id="dhy-SO-G6T"/>
+                                </constraints>
+                                <state key="normal" title="重设值"/>
+                                <connections>
+                                    <action selector="setValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHN-fM-LTJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="paX-Gf-M3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FfW-7l-MmH"/>
+                            <constraint firstItem="XSF-rf-2DK" firstAttribute="top" secondItem="paX-Gf-M3b" secondAttribute="bottom" constant="18" id="KOY-EM-zTL"/>
+                            <constraint firstItem="0zU-PF-Znv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="R1l-oy-S05"/>
+                            <constraint firstItem="paX-Gf-M3b" firstAttribute="top" secondItem="0zU-PF-Znv" secondAttribute="bottom" constant="17" id="akS-Q1-P3c"/>
+                            <constraint firstItem="XSF-rf-2DK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctu-Fm-95T"/>
+                            <constraint firstItem="0zU-PF-Znv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h2a-mk-Pw4"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="badge" destination="X7L-gY-3Fh" id="oUO-cd-H4l"/>
+                        <outlet property="valueTextField" destination="paX-Gf-M3b" id="hkT-bq-OzY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="416"/>
+        </scene>
+    </scenes>
+</document>
