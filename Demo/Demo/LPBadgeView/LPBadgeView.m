@@ -326,19 +326,21 @@ typedef NS_ENUM(NSInteger, BState) {
     
     //动画容器
     UIImageView *imgView = [UIImageView new];
-    imgView.bounds = CGRectMake(0, 0, BadgeR*2, BadgeR*2);
-    imgView.center = CenterAt(_badgeLabel);
-    [_badgeLabel addSubview:imgView];
-    imgView.animationDuration = .5;
+    imgView.frame = _badgeLabel.frame;
+    [_badgeLabel.superview addSubview:imgView];
+    imgView.contentMode = UIViewContentModeCenter;
+    imgView.animationDuration = .25;
     imgView.animationRepeatCount = 1;
     NSMutableArray *images = [NSMutableArray array];
-    for (int i=0; i<5; i++) {
-        NSString *imgName = [NSString stringWithFormat:@"lp_badge_animation_%d", i];
+    for (int i=1; i<=5; i++) {
+        NSString *imgName = [NSString stringWithFormat:@"LPBadgeView.bundle/LPBadgeBomb_%d", i];
         UIImage *img = [UIImage imageNamed:imgName];
         if (img) [images addObject:img];
     }
     imgView.animationImages = images;
     [imgView startAnimating];
+    
+    _badgeLabel.hidden = YES;
     
     //动画结束后处理
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(imgView.animationDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

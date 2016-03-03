@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D60FE241C8680EA003BAD3F /* LPBadgeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D60FE211C8680EA003BAD3F /* LPBadgeView.bundle */; };
+		5D4D18DD1C883B7300F93517 /* LPBadgeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4D18DC1C883B7300F93517 /* LPBadgeView.bundle */; };
 		5D60FE251C8680EA003BAD3F /* LPBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D60FE231C8680EA003BAD3F /* LPBadgeView.m */; };
 		5D8871A51C7FEA9A00B16CA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8871A41C7FEA9A00B16CA4 /* main.m */; };
 		5D8871A81C7FEA9A00B16CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8871A71C7FEA9A00B16CA4 /* AppDelegate.m */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D60FE211C8680EA003BAD3F /* LPBadgeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LPBadgeView.bundle; sourceTree = "<group>"; };
+		5D4D18DC1C883B7300F93517 /* LPBadgeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LPBadgeView.bundle; sourceTree = "<group>"; };
 		5D60FE221C8680EA003BAD3F /* LPBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPBadgeView.h; sourceTree = "<group>"; };
 		5D60FE231C8680EA003BAD3F /* LPBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPBadgeView.m; sourceTree = "<group>"; };
 		5D8871A01C7FEA9A00B16CA4 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +47,7 @@
 		5D60FE201C8680EA003BAD3F /* LPBadgeView */ = {
 			isa = PBXGroup;
 			children = (
-				5D60FE211C8680EA003BAD3F /* LPBadgeView.bundle */,
+				5D4D18DC1C883B7300F93517 /* LPBadgeView.bundle */,
 				5D60FE221C8680EA003BAD3F /* LPBadgeView.h */,
 				5D60FE231C8680EA003BAD3F /* LPBadgeView.m */,
 			);
@@ -152,8 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4D18DD1C883B7300F93517 /* LPBadgeView.bundle in Resources */,
 				5D8871B31C7FEA9A00B16CA4 /* LaunchScreen.storyboard in Resources */,
-				5D60FE241C8680EA003BAD3F /* LPBadgeView.bundle in Resources */,
 				5D8871B01C7FEA9A00B16CA4 /* Assets.xcassets in Resources */,
 				5D8871AE1C7FEA9A00B16CA4 /* Main.storyboard in Resources */,
 			);
