@@ -3,6 +3,8 @@
 
 下载地址：https://github.com/SwiftLiu/LPBadgeView.git
 
+https://github.com/SwiftLiu/LPBadgeView/blob/master/movie_LPBadgeView.gif?raw=true
+
 #### 1.便利初始化
 ```objc
 ///默认color(主题颜色)为红色
