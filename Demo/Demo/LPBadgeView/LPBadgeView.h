@@ -15,6 +15,8 @@
 
 ///值
 @property (assign, nonatomic) NSInteger value;
+///结束回调
+@property (strong, nonatomic) void (^hiddenBlock)(NSInteger value);
 
 ///便利初始化，默认color(主题颜色)为红色
 + (LPBadgeView *)badgeWithColor:(UIColor *)color;

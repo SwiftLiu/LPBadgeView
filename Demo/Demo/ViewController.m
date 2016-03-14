@@ -32,6 +32,9 @@
 {
     //xib初始化
     badge.value = 13;
+    [badge setHiddenBlock:^(NSInteger value) {
+        NSLog(@"消失：%ld", value);
+    }];
     
     //纯代码初始化
     LPBadgeView *view = [LPBadgeView badgeWithColor:[UIColor orangeColor]];

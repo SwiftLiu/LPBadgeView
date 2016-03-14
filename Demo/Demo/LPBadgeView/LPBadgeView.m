@@ -323,6 +323,7 @@ typedef NS_ENUM(NSInteger, BState) {
 - (void)beHidden
 {
     state = BStateHidden;
+    if (_hiddenBlock) _hiddenBlock(_value);//回调
     
     //动画容器
     UIImageView *imgView = [UIImageView new];
