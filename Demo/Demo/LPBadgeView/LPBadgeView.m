@@ -38,7 +38,8 @@ typedef NS_ENUM(NSInteger, BState) {
     BOOL canSet;
     int shakeCount;
     int backCount;
-    
+    TouchEndBlock touchEndBlock;
+
     CGPoint centerAtWindow;
     
     BState state;
@@ -222,7 +223,15 @@ typedef NS_ENUM(NSInteger, BState) {
     else{
         [self beStatic];
     }
+    if (touchEndBlock!=nil){
+        touchEndBlock();
+    }
 }
+
+-(void)setTouchEndBlock:(nonnull TouchEndBlock)handle{
+    touchEndBlock = handle;
+}
+
 
 #pragma mark - 动画
 //静止动画
